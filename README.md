@@ -6,7 +6,9 @@ Notarization (also known as timestamping) is a powerful non-monetary blockchain 
 
 A generic data file can be hashed to produce a short unique identifier, equivalent to its digital fingerprint. Such a fingerprint can be associated to a Bitcoin transaction (or any other kind of blockchain transaction), the bitcoin amount being irrelevant, and hence registered on the blockchain. The immutability of this hash commitment on the blockchain provides the data file owner with a robust means of non-repudiable timestamping and the ability to exhibit the file at a later time and prove without a doubt that its contents have not changed i.e. by comparing the hash of the exhibited file to the hash notarized on the blockchain. 
 
-Of course the notarization process is as reliable as the used blockchain, with the bitcoin one being the most secure. There generic notarization process has been standardized as [OpenTimestamps](https://opentimestamps.org/) to achieve third party auditable verification.
+The notarization process is as reliable as the used blockchain, with the bitcoin one being the most secure.
+
+The generic notarization process has been standardized as [OpenTimestamps](https://opentimestamps.org/) to achieve third party auditable verification. OpenTimestamps provides _aggregation_ of multiple documents (hashes) in a Merkle Tree, so that that a single blockchain transaction performs _attestation_ of all those documents at the same time, with scalable efficiency.
 
 # Requirements:
 - [a Google Cloud Platform (GCP) account](https://cloud.google.com/free/)
