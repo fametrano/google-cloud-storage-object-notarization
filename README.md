@@ -2,7 +2,7 @@
 
 The purpose of this project is to provide a Google Cloud Storage user with a system that allows to notarize every object uploaded in a specific bucket.
 
-Notarization (also known as timestamping) is a powerful non-monetary blockchain application, consisting of trustless timestamping of documents or anchoring of arbitrarily large data sets.
+Notarization (also known as timestamping) is a powerful non-monetary blockchain application, consisting of trust-minimizing timestamping of documents or anchoring of arbitrarily large data sets.
 
 A generic data file can be hashed to produce a short unique identifier, equivalent to its digital fingerprint. Such a fingerprint can be associated to a Bitcoin transaction (or any other kind of blockchain transaction), the bitcoin amount being irrelevant, and hence registered on the blockchain. The immutability of this hash commitment on the blockchain provides the data file owner with a robust means of non-repudiable timestamping and the ability to exhibit the file at a later time and prove without a doubt that its contents have not changed i.e. by comparing the hash of the exhibited file to the hash notarized on the blockchain. 
 
